@@ -1,0 +1,1078 @@
+/* =========================================
+   GOOGLE FONTS
+========================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+
+/* =========================================
+   GLOBAL
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fff8fb;
+    color: #4a303b;
+    line-height: 1.7;
+}
+
+a {
+    text-decoration: none;
+}
+
+::selection {
+    background: #f4c7d8;
+    color: #6f3c4d;
+}
+
+
+/* =========================================
+   NAVIGATION
+========================================= */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    padding: 20px 7%;
+
+    background: rgba(255, 248, 251, 0.92);
+
+    backdrop-filter: blur(12px);
+
+    border-bottom: 1px solid #f7dce7;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 30px;
+    font-weight: 600;
+    color: #b85c7a;
+}
+
+.logo::after {
+    content: ' ♡';
+    font-size: 18px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: #684653;
+    font-size: 13px;
+    transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #c75c82;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero {
+    min-height: 92vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 80px 8%;
+
+    position: relative;
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at 15% 20%,
+            #ffdce9 0,
+            transparent 25%
+        ),
+        radial-gradient(
+            circle at 85% 70%,
+            #f9d5e4 0,
+            transparent 25%
+        ),
+        #fff8fb;
+}
+
+.hero::before {
+    content: '♡';
+
+    position: absolute;
+
+    top: 15%;
+    left: 10%;
+
+    font-size: 50px;
+
+    color: #f3bfd2;
+
+    transform: rotate(-15deg);
+}
+
+.hero::after {
+    content: '✦';
+
+    position: absolute;
+
+    bottom: 18%;
+    right: 12%;
+
+    font-size: 35px;
+
+    color: #d98aa5;
+}
+
+.hero-text {
+    max-width: 800px;
+
+    position: relative;
+    z-index: 2;
+}
+
+.small-heading,
+.section-label {
+    letter-spacing: 4px;
+
+    font-size: 11px;
+
+    color: #c75c82;
+
+    font-weight: 500;
+
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: clamp(60px, 9vw, 105px);
+
+    line-height: 0.95;
+
+    font-weight: 500;
+
+    color: #6f3c4d;
+
+    margin-bottom: 30px;
+}
+
+.intro {
+    max-width: 600px;
+
+    margin: 0 auto 35px;
+
+    font-size: 16px;
+
+    color: #866572;
+
+    font-weight: 300;
+}
+
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.hero-buttons {
+    margin-top: 25px;
+}
+
+.button {
+    display: inline-block;
+
+    padding: 13px 28px;
+
+    border-radius: 30px;
+
+    background: #c75c82;
+
+    color: white;
+
+    font-size: 13px;
+
+    margin: 5px;
+
+    box-shadow:
+        0 8px 20px rgba(199, 92, 130, 0.2);
+
+    transition: 0.3s ease;
+}
+
+.button:hover {
+    background: #ae496d;
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 12px 25px rgba(199, 92, 130, 0.3);
+}
+
+.secondary {
+    background: white;
+
+    color: #b04f73;
+
+    border: 1px solid #efc3d3;
+
+    box-shadow: none;
+}
+
+.secondary:hover {
+    background: #fff0f5;
+
+    color: #a34769;
+}
+
+
+/* =========================================
+   GENERAL SECTIONS
+========================================= */
+
+.section {
+    padding: 120px 10%;
+
+    max-width: 1200px;
+
+    margin: auto;
+}
+
+.section h2 {
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 65px;
+
+    font-weight: 500;
+
+    color: #6f3c4d;
+
+    margin-bottom: 25px;
+}
+
+.section > p {
+    max-width: 700px;
+
+    color: #80616c;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================================
+   ABOUT
+========================================= */
+
+#about {
+    text-align: center;
+
+    position: relative;
+}
+
+#about::before {
+    content: '✿';
+
+    display: block;
+
+    color: #e4a4b9;
+
+    font-size: 25px;
+
+    margin-bottom: 20px;
+}
+
+.about-quote {
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 28px;
+
+    font-style: italic;
+
+    font-weight: 500;
+
+    letter-spacing: 0.5px;
+
+    color: #b45b79;
+
+    margin-top: 35px;
+}
+
+#about > p {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* =========================================
+   POETRY
+========================================= */
+
+.poetry-section {
+    max-width: none;
+
+    padding: 130px 8%;
+
+    background:
+        linear-gradient(
+            180deg,
+            #fff0f5 0%,
+            #fff7fa 100%
+        );
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+.poetry-section::before {
+    content: '✿';
+
+    position: absolute;
+
+    top: 70px;
+    left: 7%;
+
+    font-size: 35px;
+
+    color: #e5a4b9;
+
+    opacity: 0.7;
+}
+
+.poetry-section::after {
+    content: '♡';
+
+    position: absolute;
+
+    bottom: 70px;
+    right: 8%;
+
+    font-size: 40px;
+
+    color: #e5a4b9;
+
+    opacity: 0.7;
+}
+
+
+/* =========================================
+   POETRY INTRO
+========================================= */
+
+.poetry-intro {
+    text-align: center;
+
+    max-width: 700px;
+
+    margin: 0 auto 95px;
+}
+
+.poetry-intro h2 {
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 78px;
+
+    font-weight: 500;
+
+    color: #6f3c4d;
+
+    margin-bottom: 18px;
+}
+
+.poetry-intro > p:last-child {
+    color: #80616c;
+
+    font-size: 15px;
+
+    font-weight: 300;
+}
+
+
+/* =========================================
+   A STORY IN BLOOM
+========================================= */
+
+.featured-book {
+    max-width: 1150px;
+
+    margin: auto;
+}
+
+.book-section-label {
+    text-align: center;
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 27px;
+
+    letter-spacing: 4px;
+
+    color: #b45b79;
+
+    margin-bottom: 5px;
+}
+
+.little-heart {
+    text-align: center;
+
+    color: #c75c82;
+
+    font-size: 23px;
+
+    margin-bottom: 35px;
+}
+
+.books-heading {
+    text-align: center;
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 58px;
+
+    font-weight: 500;
+
+    color: #6f3c4d;
+
+    margin-bottom: 10px;
+}
+
+.books-intro {
+    text-align: center;
+
+    color: #80616c;
+
+    font-size: 14px;
+
+    margin-bottom: 60px;
+}
+
+
+/* =========================================
+   ALL BOOKS GRID
+========================================= */
+
+.books-grid {
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    gap: 70px;
+
+    max-width: 1000px;
+
+    margin: auto;
+}
+
+
+/* =========================================
+   PORTFOLIO BOOK CARD
+========================================= */
+
+.portfolio-book-card {
+    display: grid;
+
+    grid-template-columns: 260px 1fr;
+
+    gap: 60px;
+
+    align-items: center;
+
+    padding: 45px;
+
+    background: rgba(255, 255, 255, 0.65);
+
+    border: 1px solid #f2d4df;
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 10px 35px rgba(111, 60, 77, 0.05);
+}
+
+
+/* =========================================
+   BOOK COVER — SMALLER SIZE
+========================================= */
+
+.portfolio-book-cover {
+    width: 240px;
+
+    height: 330px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    position: relative;
+
+    margin: auto;
+}
+
+.portfolio-book-cover::before {
+    content: '';
+
+    position: absolute;
+
+    width: 210px;
+
+    height: 210px;
+
+    background: #f7d6e2;
+
+    border-radius: 50%;
+
+    filter: blur(2px);
+
+    z-index: 0;
+}
+
+.portfolio-book-cover img {
+    width: 210px;
+
+    max-width: 100%;
+
+    max-height: 300px;
+
+    object-fit: contain;
+
+    position: relative;
+
+    z-index: 1;
+
+    border-radius: 5px;
+
+    box-shadow:
+        0 20px 40px rgba(111, 60, 77, 0.18);
+
+    transition: 0.4s ease;
+}
+
+.portfolio-book-cover img:hover {
+    transform:
+        translateY(-8px)
+        rotate(-1deg);
+
+    box-shadow:
+        0 30px 50px rgba(111, 60, 77, 0.22);
+}
+
+
+/* =========================================
+   BOOK INFORMATION
+========================================= */
+
+.portfolio-book-info {
+    max-width: 600px;
+}
+
+.portfolio-book-info h3 {
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: clamp(45px, 5vw, 70px);
+
+    line-height: 0.95;
+
+    font-weight: 500;
+
+    color: #6f3c4d;
+
+    margin-bottom: 20px;
+}
+
+.portfolio-book-info .section-label {
+    font-size: 11px;
+
+    letter-spacing: 3px;
+}
+
+.book-tagline {
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 24px;
+
+    font-style: italic;
+
+    color: #b45b79;
+
+    margin-bottom: 20px;
+}
+
+.book-description {
+    color: #80616c;
+
+    font-size: 14px;
+
+    margin-bottom: 18px;
+
+    line-height: 1.9;
+}
+
+
+/* =========================================
+   BOOK DETAILS
+========================================= */
+
+.book-details {
+    display: flex;
+
+    gap: 50px;
+
+    margin-top: 30px;
+
+    padding-top: 25px;
+
+    border-top: 1px solid #f0ccd9;
+}
+
+.book-details div {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 5px;
+}
+
+.book-details span {
+    font-size: 10px;
+
+    letter-spacing: 2px;
+
+    color: #c75c82;
+}
+
+.book-details strong {
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 20px;
+
+    color: #6f3c4d;
+}
+
+.published-date {
+    color: #80616c;
+
+    font-size: 12px;
+
+    margin-top: 18px;
+}
+
+
+/* =========================================
+   THREE PARTS
+========================================= */
+
+.book-parts {
+    max-width: 1150px;
+
+    margin: 130px auto 0;
+
+    text-align: center;
+}
+
+.book-parts h3 {
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 50px;
+
+    font-weight: 500;
+
+    color: #6f3c4d;
+
+    margin-bottom: 50px;
+}
+
+.parts-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.part-card {
+    padding: 40px 30px;
+
+    background:
+        rgba(255, 255, 255, 0.75);
+
+    border: 1px solid #f2d4df;
+
+    border-radius: 20px;
+
+    text-align: left;
+
+    transition: 0.3s ease;
+
+    box-shadow:
+        0 8px 25px rgba(111, 60, 77, 0.04);
+}
+
+.part-card:hover {
+    transform: translateY(-7px);
+
+    background: #ffeaf2;
+
+    box-shadow:
+        0 15px 35px rgba(111, 60, 77, 0.08);
+}
+
+.part-card span {
+    font-size: 11px;
+
+    letter-spacing: 2px;
+
+    color: #c75c82;
+}
+
+.part-card h4 {
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 30px;
+
+    color: #793f52;
+
+    margin: 15px 0;
+}
+
+.part-card p {
+    font-size: 13px;
+
+    color: #80616c;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   WRITING JOURNEY
+========================================= */
+
+.timeline {
+    margin-top: 60px;
+
+    position: relative;
+
+    max-width: 700px;
+}
+
+.timeline::before {
+    content: '';
+
+    position: absolute;
+
+    left: 8px;
+
+    top: 0;
+
+    bottom: 0;
+
+    width: 2px;
+
+    background: #edbfd0;
+}
+
+.timeline-item {
+    position: relative;
+
+    padding-left: 45px;
+
+    margin-bottom: 55px;
+}
+
+.timeline-item::before {
+    content: '♡';
+
+    position: absolute;
+
+    left: -2px;
+
+    top: 0;
+
+    color: #c75c82;
+
+    background: #fff8fb;
+
+    font-size: 18px;
+}
+
+.timeline-item h3 {
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 32px;
+
+    font-weight: 600;
+
+    color: #793f52;
+
+    margin-bottom: 8px;
+}
+
+.timeline-item p {
+    color: #80616c;
+}
+
+
+/* =========================================
+   CONTACT
+========================================= */
+
+.contact-section {
+    text-align: center;
+
+    background: #fff0f5;
+
+    max-width: none;
+}
+
+.contact-section > p {
+    margin-left: auto;
+
+    margin-right: auto;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+    text-align: center;
+
+    padding: 50px 20px 35px;
+
+    background: #6f3c4d;
+
+    color: #ffeef4;
+
+    font-size: 12px;
+}
+
+.signature-container {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin-bottom: 15px;
+}
+
+.signature-text {
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 22px;
+
+    font-style: italic;
+
+    color: #f2b5c9;
+
+    margin-bottom: 5px;
+}
+
+.signature-img {
+    height: 85px;
+
+    width: auto;
+
+    filter: invert(1);
+
+    mix-blend-mode: screen;
+
+    opacity: 0.9;
+}
+
+.copyright {
+    letter-spacing: 1px;
+
+    opacity: 0.8;
+
+    text-transform: uppercase;
+
+    font-size: 11px;
+}
+
+.designer-link {
+    color: #f2b5c9;
+
+    text-decoration: none;
+
+    transition: 0.3s ease;
+}
+
+.designer-link:hover {
+    color: #ffffff;
+
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+    /* Navigation */
+
+    header {
+        padding: 18px 6%;
+    }
+
+    .logo {
+        font-size: 26px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+
+    /* Hero */
+
+    .hero {
+        min-height: 85vh;
+
+        padding: 60px 7%;
+    }
+
+    .hero h1 {
+        font-size: 60px;
+    }
+
+    .intro {
+        font-size: 14px;
+    }
+
+
+    /* Sections */
+
+    .section {
+        padding: 85px 7%;
+    }
+
+    .section h2 {
+        font-size: 50px;
+    }
+
+
+    /* Poetry */
+
+    .poetry-section {
+        padding: 90px 7%;
+    }
+
+    .poetry-intro {
+        margin-bottom: 70px;
+    }
+
+    .poetry-intro h2 {
+        font-size: 58px;
+    }
+
+
+    /* Books */
+
+    .books-heading {
+        font-size: 48px;
+    }
+
+    .books-grid {
+        gap: 45px;
+    }
+
+    .portfolio-book-card {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+
+        padding: 30px 20px;
+
+        text-align: center;
+    }
+
+
+    /* Smaller mobile cover */
+
+    .portfolio-book-cover {
+        width: 200px;
+
+        height: 270px;
+    }
+
+    .portfolio-book-cover::before {
+        width: 180px;
+
+        height: 180px;
+    }
+
+    .portfolio-book-cover img {
+        width: 175px;
+
+        max-height: 245px;
+    }
+
+
+    .portfolio-book-info {
+        margin: auto;
+    }
+
+    .portfolio-book-info h3 {
+        font-size: 50px;
+    }
+
+    .book-details {
+        justify-content: center;
+    }
+
+
+    /* Three parts */
+
+    .book-parts {
+        margin-top: 90px;
+    }
+
+    .book-parts h3 {
+        font-size: 40px;
+    }
+
+    .parts-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* Timeline */
+
+    .timeline {
+        margin-top: 40px;
+    }
+}

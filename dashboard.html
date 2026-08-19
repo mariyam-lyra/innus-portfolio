@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Author Dashboard | Assiyam Inaz</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- ========================================
+         AUTHOR DASHBOARD
+    ========================================= -->
+
+    <section class="dashboard">
+
+
+        <!-- ========================================
+             DASHBOARD HEADER
+        ========================================= -->
+
+        <div class="dashboard-header">
+
+            <div>
+
+                <p class="section-label">
+                    AUTHOR'S CORNER
+                </p>
+
+                <h1>
+                    My Books ♡
+                </h1>
+
+                <p>
+                    Manage your books, covers and stories from here.
+                </p>
+
+            </div>
+
+
+            <button
+                id="logout-button"
+                class="button secondary"
+            >
+                Log Out
+            </button>
+
+        </div>
+
+
+
+        <!-- ========================================
+             ADD / EDIT BOOK
+        ========================================= -->
+
+        <div class="dashboard-card">
+
+            <p class="section-label" id="form-label">
+                NEW BOOK
+            </p>
+
+
+            <h2 id="form-title">
+                Add a Book
+            </h2>
+
+
+            <form id="book-form">
+
+
+                <!-- BOOK TITLE -->
+
+                <label for="title">
+                    Book Title
+                </label>
+
+                <input
+                    type="text"
+                    id="title"
+                    placeholder="Enter book title"
+                    required
+                >
+
+
+
+                <!-- TAGLINE -->
+
+                <label for="tagline">
+                    Tagline
+                </label>
+
+                <input
+                    type="text"
+                    id="tagline"
+                    placeholder="A short line about the book"
+                >
+
+
+
+                <!-- DESCRIPTION -->
+
+                <label for="description">
+                    Description
+                </label>
+
+                <textarea
+                    id="description"
+                    rows="6"
+                    placeholder="Write about the book..."
+                ></textarea>
+
+
+
+                <!-- GENRE -->
+
+                <label for="genre">
+                    Genre
+                </label>
+
+                <input
+                    type="text"
+                    id="genre"
+                    placeholder="Poetry"
+                >
+
+
+
+                <!-- GOOGLE PLAY BOOKS LINK -->
+
+                <label for="book_url">
+                    Google Play Books Link
+                </label>
+
+                <input
+                    type="url"
+                    id="book_url"
+                    placeholder="Paste Google Play Books link"
+                >
+
+
+
+                <!-- STATUS -->
+
+                <label for="status">
+                    Status
+                </label>
+
+                <select id="status">
+
+                    <option value="Coming Soon">
+                        Coming Soon
+                    </option>
+
+                    <option value="Available">
+                        Available
+                    </option>
+
+                </select>
+
+
+
+                <!-- PUBLISHED DATE -->
+
+                <label for="published_date">
+                    Published Date
+                </label>
+
+                <input
+                    type="date"
+                    id="published_date"
+                >
+
+
+
+                <!-- BOOK COVER -->
+
+                <label for="cover">
+                    Book Cover
+                </label>
+
+                <input
+                    type="file"
+                    id="cover"
+                    accept="image/*"
+                >
+
+                <small id="cover-help">
+                    Choose a cover when adding a new book.
+                </small>
+
+
+
+                <!-- HIDDEN EDIT ID -->
+
+                <input
+                    type="hidden"
+                    id="editing-book-id"
+                >
+
+
+
+                <!-- SUBMIT -->
+
+                <button
+                    type="submit"
+                    class="button"
+                    id="submit-book-button"
+                >
+                    Add Book ♡
+                </button>
+
+
+
+                <!-- CANCEL EDIT -->
+
+                <button
+                    type="button"
+                    class="button secondary"
+                    id="cancel-edit-button"
+                    style="display: none;"
+                >
+                    Cancel Edit
+                </button>
+
+
+
+                <!-- MESSAGE -->
+
+                <p id="book-message"></p>
+
+            </form>
+
+        </div>
+
+
+
+        <!-- ========================================
+             EXISTING BOOKS
+        ========================================= -->
+
+        <div class="dashboard-card">
+
+            <p class="section-label">
+                YOUR COLLECTION
+            </p>
+
+
+            <h2>
+                Books
+            </h2>
+
+
+            <div id="books-list">
+                Loading books...
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- ========================================
+         SUPABASE
+    ========================================= -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
